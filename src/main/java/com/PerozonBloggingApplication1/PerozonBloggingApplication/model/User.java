@@ -1,8 +1,17 @@
 package com.PerozonBloggingApplication1.PerozonBloggingApplication.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.UUID;
 
-public class User {
+
+@Entity
+@Data
+@NoArgsConstructor
+public class User{
 
     private UUID id;
     private String firstName;
@@ -16,6 +25,7 @@ public class User {
         this.password = password;
     }
 
+    @Id
     public UUID getId() {
         return id;
     }
@@ -31,4 +41,5 @@ public class User {
     public int getPassword() {
         return password;
     }
+
 }
