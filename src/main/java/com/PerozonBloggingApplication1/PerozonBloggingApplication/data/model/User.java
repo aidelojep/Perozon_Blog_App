@@ -1,4 +1,4 @@
-package com.PerozonBloggingApplication1.PerozonBloggingApplication.model;
+package com.PerozonBloggingApplication1.PerozonBloggingApplication.data.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
